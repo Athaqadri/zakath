@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>zakath</title>
+    <link rel="stylesheet" href="zakath.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" style="background-color: aquamarine; width: 60%">
+      <h1
+        style="
+          text-align: center;
+          font-size: 30px;
+          margin-top: 3rem;
+          font-weight: 600;
+          padding-top: 2rem;
+          text-decoration: underline 3px green;
+        "
+      >
+        Zakat Calculator
+      </h1>
+
+      <div class="row g-3" style="margin-top: 3rem">
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Gold</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input type="number" class="form-control" id="gold" placeholder="0" />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Silver</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="silver"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Cash</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input type="number" class="form-control" id="Cash" placeholder="0" />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Money Deposited in Bank</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="MoneyDeposited"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Policy / Bond / FD</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Policy"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Given Loan</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="GivenLoan"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Other Assets</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="OtherAssets"
+            placeholder="0"
+          />
+        </div>
+        <h1
+          style="
+            text-align: center;
+            font-size: 30px;
+            margin-top: 3rem;
+            font-weight: 600;
+            padding-top: 2rem;
+            text-decoration: underline 3px green;
+          "
+        >
+          Merchandise
+        </h1>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Raw Materials in Factory</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="RawMaterials"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Manufactured goods in factory/shop etc.</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Manufactured"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Plots, houses or flats for trading.</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Plots"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>
+            Business partnership assets on which Zakat is to be calculated.
+          </li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Businesspartnership"
+            placeholder="0"
+          />
+        </div>
+        <h1
+          style="
+            text-align: center;
+            font-size: 30px;
+            margin-top: 3rem;
+            font-weight: 600;
+            padding-top: 2rem;
+          "
+        >
+          Amount to be deducted from Total Zakat-able Wealth (i.e.Liabilities)
+        </h1>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Loan</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input type="number" class="form-control" id="Loan" placeholder="0" />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Dues or installments on house, shop, things.</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Duesinstallments"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>
+            Remaining payable amount of committee (Chit Fund) (provided that one
+            has already got the total amount of the committee).
+          </li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Remainingpayable"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>
+            Utility bills such as gas, electricity etc. provided that one has
+            got the bills before the Zakat year is complete.
+          </li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Utilitybills"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Payable to Dealers</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="PayableDealers"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Salaries of employees.</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Salarieemployees"
+            placeholder="0"
+          />
+        </div>
+        <div class="col-md-6" style="display: flex; padding-left: 30px">
+          <li>Unpaid Zakat of the previous year.</li>
+        </div>
+
+        <div class="col-md-6" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <label for="input" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            id="Unpaid"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <a href="">
+        <button
+          class="css-button-shadow-border-sliding--green"
+          onclick="calculate(event)"
+        >
+          Calculate
+        </button></a
+      >
+
+      <!-- 2nd btn -->
+
+      <a href="">
+        <button type="reset" class="css-button-shadow-border-sliding--red">
+          Reset
+        </button>
+      </a>
+
+      <h1
+        style="
+          text-align: center;
+          font-size: 30px;
+          margin-top: 2rem;
+          font-weight: 600;
+          padding-top: 2rem;
+          text-decoration: underline 3px green;
+          margin-bottom: 3rem;
+        "
+      >
+        Total Calculation
+      </h1>
+      <div class="row">
+        <div
+          class="col-md-8"
+          style="display: flex; padding-left: 30px; list-style: none"
+        >
+          <li>Total Assets Amount</li>
+        </div>
+
+        <div class="col-md-4" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <span id="TotalAmount" style="padding-top: 6px"></span>
+        </div>
+        <div
+          class="col-md-8"
+          style="display: flex; padding-left: 30px; list-style: none"
+        >
+          <li>Total Deductions</li>
+        </div>
+
+        <div class="col-md-4" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <span id="TotalDeductions" style="padding-top: 6px">0</span>
+        </div>
+        <div
+          class="col-md-8"
+          style="display: flex; padding-left: 30px; list-style: none"
+        >
+          <li>Amount on Which Zakat to be Calculated</li>
+        </div>
+
+        <div class="col-md-4" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <span id="Amount" style="padding-top: 6px">0</span>
+        </div>
+        <div
+          class="col-md-8"
+          style="display: flex; padding-left: 30px; list-style: none"
+        >
+          <li>Zakat Amount 2.5 % from Your Total Amount</li>
+        </div>
+
+        <div class="col-md-4" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <span id="ZakatAmount" style="padding-top: 6px">0</span>
+        </div>
+        <hr />
+        <div
+          class="col-md-8"
+          style="display: flex; padding-left: 30px; list-style: none"
+        >
+          <li>Total Zakat Amount</li>
+        </div>
+
+        <div class="col-md-4" style="display: flex">
+          <i class="bi bi-currency-rupee" style="padding: 8px"></i>
+          <span id="TotalZakatAmount" style="padding-top: 6px">0</span>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <script src="/zakath.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

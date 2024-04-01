@@ -1,0 +1,96 @@
+body {
+  background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-islamic-background-with-lantern-picture-image_1599224.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.css-button-shadow-border-sliding--green {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #2525d3;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45%;
+  margin-top: 2rem;
+}
+.css-button-shadow-border-sliding--green:hover:after {
+  width: 100%;
+  left: 0;
+}
+.css-button-shadow-border-sliding--green:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #80ed99;
+  right: 0;
+}
+.css-button-shadow-border-sliding--green:active {
+  top: 2px;
+}
+
+.css-button-shadow-border-sliding--red {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #b81531;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45%;
+  margin-top: 2rem;
+}
+.css-button-shadow-border-sliding--red:hover:after {
+  width: 100%;
+  left: 0;
+}
+.css-button-shadow-border-sliding--red:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #80ed99;
+  right: 0;
+}
+.css-button-shadow-border-sliding--red:active {
+  top: 2px;
+}
